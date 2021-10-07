@@ -94,6 +94,13 @@ body {
 }
 
 .section__hero-goods {
+  width: 48%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section__hero-wide {
   width: 50%;
 }
 
