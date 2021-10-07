@@ -1,9 +1,5 @@
 .title
-    font-style: normal
-    font-weight: bold
-    font-size: 56px
-    line-height: 68px
-    font-family: Helvetica-Neue-bold
+    @include title-font
 .section
     &__header
         display: flex
@@ -11,17 +7,16 @@
         margin-top: 20px
         margin-bottom: 16px
     &__number
+        @include section__number-font
         height: 24px
         width: 24px
+        background-color: #EF483E
+        border-radius: 50%
         text-align: center
         padding: 2px 8px
-        font-size: 16px
-        line-height: 20px
-        border-radius: 50%
-        background-color: #EF483E
         margin-right: 8px
     &__title
-        @include title-font
+        @include section__title-font
     &__hero
         display: flex
         flex-direction: column
@@ -30,8 +25,5 @@
             margin-bottom: 16px
             height: 44px
 label
-    font-style: normal
-    font-weight: normal
-    font-size: 13px
-    line-height: 16px
+    @include label-font
     margin-bottom: 8px
