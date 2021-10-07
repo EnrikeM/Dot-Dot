@@ -11,32 +11,42 @@
 
 <body>
     <div class="container">
-        <div class="title">
+        <h1 class="title">
             FTL: Прямая машина
-        </div>
+        </h1>
         <div class="section">
             <div class="section__header">
-                <div class="section__number">1</div>
-                <div class="section__title">Маршрут</div>
+                <p class="section__number">1</p>
+                <p class="section__title">Маршрут</p>
             </div>
-            <form action="#" class="section__hero">
-                <label for="input">Откуда</label>
-                <input type="text" class="section__input--wide">
-                <label for="input">Куда</label>
-                <input type="text" class="section__input--wide">
+            <form action="#" class="section__hero-route">
+                <label>Откуда<input type="text" class="section__input"></label>
+                <label>Куда<input type="text" class="section__input"></label>
             </form>
         </div>
-        <!-- /route-section -->
+        <!-- /.section -->
         <div class="section">
             <div class="section__header">
-                <div class="section__number">2</div>
-                <div class="section__title">Транспорт</div>
+                <p class="section__number">2</p>
+                <p class="section__title">Транспорт</p>
             </div>
-            <form action="#" class="section__hero">
-                <label for="input">Грузоподъемность</label>
-                <input type="text" class="section__input--short">
-                <label for="input">Способ погрузки</label>
-                <input type="text" class="section__input--short">
+            <div class="section__hero-wrapper">
+                <form action="#" class="section__hero-transport">
+                    <label>Грузоподъемность<input type="text" class="section__input"></label>
+                </form>
+                <form action="#" class="section__hero-transport">
+                    <label>Способ погрузки<input type="text" class="section__input"></label>
+                </form>
+            </div>
+        </div>
+        <!-- /.section -->
+        <div class="section">
+            <div class="section__header">
+                <p class="section__number">3</p>
+                <p class="section__title">Груз</p>
+            </div>
+            <form action="#" class="section__hero-goods">
+                <label>Тип груза<input type="text" class="section__input"></label>
             </form>
         </div>
     </div>

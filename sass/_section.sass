@@ -18,15 +18,26 @@
     &__title
         @include section__title-font
     &__hero
-        display: flex
-        flex-direction: column
+        &-wrapper
+            display: flex
+            width: 50%
+            justify-content: space-between
+        &-route
+            display: flex
+            flex-direction: column
+            width: 100%
+        &-transport
+            display: flex
+            flex-direction: column
+            width: 48%
+
+        &-goods
+            width: 50%
     &__input
-        &--wide
-            margin-bottom: 16px
-            height: 44px
-        &--short
-            width: 25%
+        width: 100%
+        height: 44px
+        margin-top: 8px
+        margin-bottom: 8px
 
 label
     @include label-font
-    margin-bottom: 8px
