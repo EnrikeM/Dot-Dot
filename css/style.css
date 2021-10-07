@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Helvetica-Neue-bold";
-  src: url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
+  src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Helvetica-Neue-medium";
-  src: url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+  src: url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
