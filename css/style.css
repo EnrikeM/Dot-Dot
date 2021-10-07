@@ -417,6 +417,10 @@ body {
   height: 44px;
 }
 
+.section__input--short {
+  width: 25%;
+}
+
 label {
   font-family: "Helvetica-Neue-medium";
   font-style: normal;
