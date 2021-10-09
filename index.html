@@ -11,54 +11,79 @@
 
 <body>
     <div class="container">
-        <h1 class="title">
-            FTL: Прямая машина
-        </h1>
-        <div class="section">
-            <div class="section__header">
-                <p class="section__number">1</p>
-                <p class="section__title">Маршрут</p>
+        <form>
+            <h1 class="title">
+                FTL: Прямая машина
+            </h1>
+            <div class="section">
+                <div class="section__header">
+                    <p class="section__number">1</p>
+                    <p class="section__title">Маршрут</p>
+                </div>
+                <div class="section__hero-route">
+                    <label>Откуда<input type="text" class="section__input"></label>
+                    <label>Куда<input type="text" class="section__input"></label>
+                </div>
             </div>
-            <form action="#" class="section__hero-route">
-                <label>Откуда<input type="text" class="section__input"></label>
-                <label>Куда<input type="text" class="section__input"></label>
+            <!-- /.section -->
+            <div class="section">
+                <div class="section__header">
+                    <p class="section__number">2</p>
+                    <p class="section__title">Транспорт</p>
+                </div>
+                <div class="section__hero-wrapper">
+                    <div class="section__hero-transport">
+                        <label>
+                            <span>Грузоподъемность</span>
+                            <input type="text" class="section__input"></label>
+                    </div>
+                    <div class="section__hero-transport">
+                        <label>
+                            <span>Способ погрузки</span>
+                            <input type="text" class="section__input">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- /.section -->
+            <div class="section">
+                <div class="section__header">
+                    <p class="section__number">3</p>
+                    <p class="section__title">Груз</p>
+                </div>
+                <div class="section__hero-wrapper">
+                    <label><span>Тип груза</span><input type="text" class="section__input"></label>
+                </div>
+                <div class="section__hero-wrapper">
+                    <div class="section__hero-goods">
+                        <label><span>Класс опасности</span><input type="text" class="section__input"></label>
+                    </div>
+                    <div class="section__hero-goods">
+                        <label><span>Объявленная ценность</span><input type="text" class="section__input"></label>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- /.section -->
+    <div class="section">
+        <div class="section__header">
+            <p class="section__number">3</p>
+            <p class="section__title">Груз</p>
+        </div>
+        <form action="#" class="section__hero-wide">
+            <!--Я знаю что так называть неправильно, но я не придумал как сделать это иначе-->
+            <label>Тип груза<input type="text" class="section__input"></label>
+        </form>
+        <div class="section__hero-wrapper">
+            <form action="#" class="section__hero-goods">
+                <label>Класс опасности<input type="text" class="section__input"></label>
+            </form>
+            <form action="#" class="section__hero-goods">
+                <label>Объявленная ценность<input type="text" class="section__input"></label>
             </form>
         </div>
-        <!-- /.section -->
-        <div class="section">
-            <div class="section__header">
-                <p class="section__number">2</p>
-                <p class="section__title">Транспорт</p>
-            </div>
-            <div class="section__hero-wrapper">
-                <form action="#" class="section__hero-transport">
-                    <label>Грузоподъемность<input type="text" class="section__input"></label>
-                </form>
-                <form action="#" class="section__hero-transport">
-                    <label>Способ погрузки<input type="text" class="section__input"></label>
-                </form>
-            </div>
-        </div>
-        <!-- /.section -->
-        <div class="section">
-            <div class="section__header">
-                <p class="section__number">3</p>
-                <p class="section__title">Груз</p>
-            </div>
-            <form action="#" class="section__hero-wide">
-                <!--Я знаю что так называть неправильно, но я не придумал как сделать это иначе-->
-                <label>Тип груза<input type="text" class="section__input"></label>
-            </form>
-            <div class="section__hero-wrapper">
-                <form action="#" class="section__hero-goods">
-                    <label>Класс опасности<input type="text" class="section__input"></label>
-                </form>
-                <form action="#" class="section__hero-goods">
-                    <label>Объявленная ценность<input type="text" class="section__input"></label>
-                </form>
-            </div>
-            <label><input type="checkbox" id="temperature">Требуется температурный режим</label>
-        </div>
+        <label><input type="checkbox" id="temperature">Требуется температурный режим</label>
+    </div>
     </div>
     <!-- /.container -->
 </body>
