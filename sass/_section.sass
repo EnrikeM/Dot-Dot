@@ -10,7 +10,7 @@
         @include section__number-font
         height: 24px
         width: 24px
-        background-color: #EF483E
+        background-color: $primary
         border-radius: 50%
         text-align: center
         padding: 2px 8px
@@ -35,7 +35,7 @@
         height: 44px
         margin-top: 8px
         margin-bottom: 8px
-
+        padding: 13px
 label
     @include label-font
     display: inline-block
@@ -46,3 +46,25 @@ label
         overflow: hidden
         width: 100%
         display: inline-block
+.option
+    display: flex
+    justify-content: space-between
+    width: 35%
+    align-items: center
+    text-align: center
+.check
+    margin-top: 12px
+    padding-left: 3em
+    &__input
+        position: absolute
+        appearance: none
+        -moz-appearance: none
+        &:checked
+            &+.check__box
+                background-color: $primary
+                background-image: url(../img/Ok.svg)
+    &__box
+        width: 24px
+        height: 24px
+        box-shadow: 0 0 0 2px #FFFFFF
+        margin-left: -3em
