@@ -90,6 +90,15 @@ body {
   width: 48%;
 }
 
+.section__hero-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .section__input {
   width: 100%;
   height: 44px;
@@ -145,6 +154,10 @@ label span {
 .check__input:checked + .check__box {
   background-color: #EF483E;
   background-image: url(../img/Ok.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .check__box {
@@ -153,6 +166,25 @@ label span {
   -webkit-box-shadow: 0 0 0 2px #FFFFFF;
           box-shadow: 0 0 0 2px #FFFFFF;
   margin-left: -3em;
+}
+
+.radio {
+  margin-top: 12px;
+  padding-left: 3em;
+}
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: none;
+}
+
+.radio__box {
+  width: 8px;
+  height: 8px;
+  margin-left: -3em;
+  border-radius: 50%;
 }
 
 .container {
